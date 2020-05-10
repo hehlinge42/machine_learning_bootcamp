@@ -1,0 +1,31 @@
+Define what Gini impurity is about and what it measures. (No mathematical formula, just the
+general concept in words).
+The Gini impurity of a dataset measures the probability of classifying incorrectly an element randomly chosen from the set.
+It is a measure of the uncertainty/diversity of a dataset.
+Let's say we have a dataset with one blue ball and one green ball.
+Picking and classifying an element gives four outcomes with equal probabilities: classifying blue and picking blue or green and classifying green and picking green or blue.
+In this example, the probability to misclasify a random pick is 2 over 4 or 0.5, so is the Gini impuriy measure.
+
+Define what Shannon entropy is and what it measures. (No mathematical formula, just the
+general concept in words).
+The Shannon entropy measures the average number of nodes in a decision tree, that you need to go through with yes/no questions to classify for sure a random pick in a dataset.
+It is a measure of the uncertainty/diversity of a dataset.
+
+Define what Information gain is and what it measures. (No mathematical formula, just the
+general concept in words).
+Information gain measures the amount of information gained about a random variable or signal from observing another random variable.
+Example: you try to understand a random variable Y explained by 3 features. It is useful to compare the information gain of each of these 3 features relative to the random variable Y, that is to say, find the feature that provides most information to predict Y.
+
+Explain how these 3 concepts are used for decision trees.
+The information gain, measured by substracting the entropy or gini impurity of Y by the entropy or gini impurity of the feature-set provides the optimal order of the nodes of a decision tree. The feature with the highest information gain relative to Y must be the top node and so on.
+
+If the dataset has 2 classes, explain what are the boundaries (minimum and maximum) of
+Gini impurity and Shannon entropy.
+If there are only two classes, you can for sure classify a random pick after one Y/N question (that is to say one node).
+If only one of the two classes is represented in thet dataset, you need 0 node to classify a random pick as there is only one effective class.
+That's why the Shannon entropy for two classes is bound in [0, 1]
+Similarly, if only one class is expressed in the dataset, the probability to misclassify a random pick is 0. If the two classes are evenly distributed in the dataset, the probability to misclassify a random pick is 0.5.
+That's why the Shannon entropy for two classes is bound in [0, 0.5]
+
+What does it mean if the Gini impurity is 0? If Shannon entropy is 0 ?
+It means that only one class of output is expressed in the dataset

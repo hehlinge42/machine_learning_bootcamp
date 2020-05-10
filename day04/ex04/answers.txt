@@ -1,0 +1,26 @@
+What are the pros of using decision trees?
+- Compared to other algorithms decision trees requires less effort for data preparation during pre-processing.
+- A decision tree does not require normalization of data.
+- A decision tree does not require scaling of data as well.
+- Missing values in the data also does NOT affect the process of building decision tree to any considerable extent.
+- A Decision trees model is very intuitive and easy to explain to technical teams as well as stakeholders.
+
+
+What are the cons of using decision trees?
+- A small change in the data can cause a large change in the structure of the decision tree causing instability.
+- For a Decision tree sometimes calculation can go far more complex compared to other algorithms.
+- Decision tree often involves higher time to train the model.
+- Decision tree training is relatively expensive as complexity and time taken is more.
+- Decision Tree algorithm is inadequate for applying regression and predicting continuous values.
+
+
+What is overfitting? How does it apply to decision trees?
+Overfitting occurs when the hypothesis used to predict the outcome fits too well the training set and does not apply well to examples outside the training set.
+A decision tree may suffer from overfitting if it has too many nodes so that it perfectly fits the training set but do not fit well an untrained set
+
+
+What can be done to avoid overfitting in decision trees?
+Pruning is a way to limit the overfitting issue in decision tree. After growing the full tree for the training set, you trim the branches that have low impact on the fit with the training dataset.
+
+What is the name of the algorithm used by sklearn for classification decision trees?
+DecisionTreeClassifier
